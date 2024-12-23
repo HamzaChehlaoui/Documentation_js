@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice de Manipulation du DOM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+    .button-icon {
+      display: flex;
+      align-items: center;
+    }
+    .button-icon i {
+      margin-right: 8px; 
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 p-8">
+  <div class="container mx-auto max-w-xl">
+    <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Exercice de Manipulation du DOM</h1>
+
+    <section class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-2xl font-semibold text-gray-700 mb-4">Ajouter, Modifier, Supprimer des Éléments</h2>
+
+      <!-- List -->
+      <ul id="itemList" class="list-disc ml-6 mb-4">
+        <li>Exemple d'élément 1</li>
+        <li>Exemple d'élément 2</li>
+      </ul>
+
+      <!-- Buttons -->
+      <div class="mb-4">
+        <button id="addButton" class="button-54 m-4">
+         Ajouter un élément
+        </button>
+        <button id="modifyButton" class="button-54 m-4">
+           Modifier le premier élément
+        </button>
+        <button id="removeButton" class="button-54 m-4">
+           Supprimer le premier élément
+        </button>
+      </div>
+
+      <div class="mb-4">
+        <input type="text" id="newItemInput" placeholder="Entrez un nouvel élément" class="px-4 py-2 border rounded-lg w-full">
+      </div>
+
+      <p class="text-gray-600">Cliquez sur les boutons pour ajouter, modifier, supprimer ou changer le style des éléments dans la liste ci-dessus.</p>
+    </section>
+  </div>
+  <a href="index.html"><button id="addButton" class="button-54 ml-[38%] mt-2">
+    Documentation JavaScript
+   </button></a>
+  <script src="script.js"></script>
+</body>
+
+</html>
